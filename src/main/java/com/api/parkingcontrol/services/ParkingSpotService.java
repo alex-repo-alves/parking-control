@@ -41,6 +41,7 @@ public class ParkingSpotService {
     }
 
     public Optional<ParkingSpotModel> findById(UUID id) {
+        parkingSpotRepository.findAll(); //Gambiarra para funcionar o findById
         return parkingSpotRepository.findById(id);
     }
 }
